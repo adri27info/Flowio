@@ -1,0 +1,45 @@
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flowio_backend_container
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+      - redis
+    env_file:
+      - .env
+    networks:
+      - flowio_network
+
+  db:
+    image: mysql:8.0
+    container_name: flowio_mysql_container
+    environment:
+      - MYSQL_ROOT_PASSWORD=${DB_PASSWORD}
+      - MYSQL_DATABASE=${DB_NAME}
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - flowio_network
+
+  redis:
+    image: redis:latest
+    container_name: flowio_redis_container
+    ports:
+      - "6379:6379"
+    networks:
+      - flowio_network
+
+volumes:
+  mysql_data:
+
+networks:
+  flowio_network:
+    driver: bridge

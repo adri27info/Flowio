@@ -1,0 +1,40 @@
+# --------- BACKEND ---------
+
+backend/venv
+
+backend/.env
+
+backend/**/__pycache__/
+backend/*.log
+
+
+# --------- FRONTEND ---------
+
+frontend/.vscode
+
+frontend/.env
+
+frontend/logs
+frontend/*.log
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/pnpm-debug.log*
+frontend/lerna-debug.log*
+
+frontend/node_modules
+frontend/dist
+frontend/dist-ssr
+frontend/*.local
+
+frontend/*.idea
+frontend/*.DS_Store.
+frontend/*.suo
+frontend/*.ntvs*
+frontend/*.njsproj
+frontend/*.sln
+frontend/*.sw?
+
+
+# --------- ADDITIONAL ---------
+.vscode/

@@ -1,0 +1,26 @@
+# Virtual venv dir
+venv/
+
+# Generated files by Django
+**/__pycache__/
+**/*.pyc
+
+# Dirs
+media/
+static/
+
+# Environment
+.env
+.env.sample
+
+# Editor configuration files
+.idea/
+.vscode/
+
+# Logs files
+*.log
+*.bak
+*.swp
+
+# Sqlite
+*.sqlite3
