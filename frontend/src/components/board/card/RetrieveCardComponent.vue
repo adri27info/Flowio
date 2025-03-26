@@ -84,7 +84,7 @@ onMounted(async () => {
 <style scoped>
 div.container-retrieve-card-body img {
     width: 30px;
-    height: 30px;
+    height: 30px !important;
     padding: 2px;
 }
 </style>

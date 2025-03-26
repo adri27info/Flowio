@@ -293,7 +293,7 @@ The app uses an authorized Gmail account to send emails. If you have two-step ve
 
    Make sure to replace `"your_generated_app_password"` with the app password you generated.
 
-   IMPORTANT!! The email may not be sent because you have an antivirus on your computer that is blocking it. This is a normal occurrence, and to test the app, you'll need to disable your antivirus, as some antiviruses, such as Avast, block the SSL certificate and prevent emails from being sent.
+   IMPORTANT!! The email may not be sent because you have an antivirus on your computer that is blocking it. This is a normal occurrence, and to test the app, you'll need to disable your antivirus, as some antiviruses, such as Avast, block the SSL certificate and prevent emails from being sent. This aside, if the email is sent, it should have been sent to your primary inbox or spam folder, so keep this in mind.
 
 ### Summary
 
