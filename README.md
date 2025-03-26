@@ -6,29 +6,55 @@ Welcome to Flowio, the app where you can create tasks quickly and efficiently.
 
 ![Login](./utils/preview/login_preview.png)
 
+---
+
 ![Register](./utils/preview/register_preview.png)
+
+---
 
 ![Profile](./utils/preview/profile_preview.png)
 
+---
+
 ![Structures 1](./utils/preview/structures_1_preview.png)
+
+---
 
 ![Structures 2](./utils/preview/structures_2_preview.png)
 
+---
+
 ![Board preview](./utils/preview/board_preview.png)
+
+---
 
 ![Creating board](./utils/preview/create_board.png)
 
+---
+
 ![Creating workspace](./utils/preview/create_workspace_preview.png)
+
+---
 
 ![Workspace](./utils/preview/workspace_preview.png)
 
+---
+
 ![Workspace detail](./utils/preview/workspace_detail.png)
+
+---
 
 ![Workspace owner](./utils/preview/workspace_owner.png)
 
+---
+
 ![Workspace searching](./utils/preview/workspace_search.png)
 
+---
+
 ![Board info](./utils/preview/board_info.png)
+
+---
 
 ![Board list and cards](./utils/preview/board_workspace.png)
 
@@ -273,24 +299,19 @@ The app uses an authorized Gmail account to send emails. If you have two-step ve
 
 The App Password will allow Gmail to send emails from the app without disabling two-step verification. It's a security step recommended by Google when using external services with 2FA enabled.
 
-Finally, you would have the AWS and Gmail services configured. The next step would be to check the .env.sample file from the backend and finish configuring your .env file for the backend. Regarding the frontend's .env, if we look at its .env.sample, the last 4 variables refer to the following:
+Finally, you'll have configured the AWS and Gmail services. The next step would be to review the backend .env.sample file and finalize the configuration. Regarding the frontend .env file, if we review its .env.sample, the last four variables related to the 'your_cloudfront_worspace_bg_modal_image_url' key refer to the cloudfront domain I previously told you to build:
 
-    VITE_DEFAULT_PROFILE_IMAGE_URL: This url refers to the default image in the media directory I mentioned earlier, and it clearly uses the AWS_S3_CUSTOM_DOMAIN I mentioned above.
+- VITE_DEFAULT_PROFILE_IMAGE_URL="your_cloudfront_default_profile_image_url/flowio/media/attachments/user/default/user_default.png"
 
-    VITE_DEFAULT_LOGO_IMAGE_URL: This url refers to the logo image used by the app.
+- VITE_DEFAULT_LOGO_IMAGE_URL="your_cloudfront_default_logo_image_url/flowio/static/utils/logos/app/logo.png"
 
-    VITE_DEFAULT_WORKSPACE_LOGO_MODAL_IMAGE_URL: This url refers to an image used in the workspace creation modal within the app.
+- VITE_DEFAULT_WORKSPACE_LOGO_MODAL_IMAGE_URL="your_cloudfront_worspace_logo_modal_image_url/flowio/static/utils/logos/workspace/workspace_logo.svg"
 
-    VITE_DEFAULT_WORKSPACE_BG_MODAL_IMAGE_URL: This url refers to a background image used in the workspace creation modal within the app.
+- VITE_DEFAULT_WORKSPACE_BG_MODAL_IMAGE_URL="your_cloudfront_worspace_bg_modal_image_url/flowio/static/utils/logos/workspace/bg_workspace_logo.svg"
 
-    Example:
+  Example: d1234abcd1234.cloudfront.net/
 
-    VITE_DEFAULT_PROFILE_IMAGE_URL="http://d1234abcd1234.cloudfront.net/flowio/media/attachments/user/default/user_default.png"
-    VITE_DEFAULT_LOGO_IMAGE_URL="http://d1234abcd1234.cloudfront.net/flowio/static/utils/logos/app/logo.png"
-    VITE_DEFAULT_WORKSPACE_LOGO_MODAL_IMAGE_URL="http://d1234abcd1234.cloudfront.net/flowio/static/utils/logos/workspace/workspace_logo.svg"
-    VITE_DEFAULT_WORKSPACE_BG_MODAL_IMAGE_URL="http://d1234abcd1234.cloudfront.net//flowio/static/utils/logos/workspace/bg_workspace_logo.svg"
-
-    Remember that these urls are generated once those paths are created within the S3 bucket you set up earlier. If they are not created, the urls you put in your new .env file for the frontend will fail. Additionally, I'll leave you to check the static directory of the backend, where you can see the references to the directories that will be created in your S3 bucket once the backend script runs and executes the collectstatic command. This command connects to the S3 bucket if everything is correctly configured. Additionally, in the backend static directory, you'll find all the images used in the app.
+Remember that these urls are generated once those paths are created within the S3 bucket youset up earlier. If they are not created, the urls you put in your new .env file for the frontend will fail. Additionally, I'll leave you to check the static directory of the backend, where you can see the references to the directories that will be created in your S3 bucket once the backend script runs and executes the collectstatic command. This command connects to the S3 bucket if everything is correctly configured. Additionally, in the backend static directory, you'll find all the images used in the app.
 
 ## Start the project
 
