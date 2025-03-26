@@ -329,9 +329,9 @@ Once you have configured both `.env` files for the frontend and backend, follow 
 
 4. Inside your development environment, you can start the app in two ways:
 
-   1. Navigate to the utils directory at the root of the project and run the start.sh script to launch the app. To stop the app, use the down.sh script.
+   1. First way: Navigate to the utils directory at the root of the project and run the start.sh script to launch the app. To stop the app, use the down.sh script.
 
-   2. Navigate first to the backend directory and run:
+   2. Second way: Navigate first to the backend directory and run:
 
    ```sh
    docker-compose up -d
