@@ -60,6 +60,7 @@ Welcome to Flowio, the app where you can create tasks quickly and efficiently.
 
 ### Features
 
+- Containerized with Docker for easy setup and environment isolation.
 - Sending emails when the user registers or wants to obtain another activation code using Celery Signals.
 - Storing static files and media using AWS's S3 service.
 - Cache and CDN services using AWS's Cloudfront service.
