@@ -90,10 +90,10 @@ Welcome to Flowio, the app where you can create tasks quickly and efficiently.
 - CSS
 - JS
 
-## Installation
+### Installation
 
 For installation and setup instructions, please check the [INSTALLATION](./utils/mds/INSTALLATION.md).
 
-## License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE](./utils/licenses/LICENSE) file for details.
