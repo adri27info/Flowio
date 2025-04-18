@@ -208,7 +208,7 @@ The app uses an authorized Gmail account to send emails. If you have two-step ve
 
 The App Password will allow Gmail to send emails from the app without disabling two-step verification. It's a security step recommended by Google when using external services with 2FA enabled.
 
-Finally, you'll have configured the AWS and Gmail services. The next step would be to review the backend .env.sample file and finalize the configuration. Regarding the frontend .env file, if we review its .env.sample, the last four variables related to the 'your_cloudfront_worspace_bg_modal_image_url' key refer to the cloudfront domain I previously told you to build:
+Finally, you'll have configured the AWS and Gmail services. The next step would be to review the backend .env.sample file and finalize the configuration. Regarding the frontend .env file, if we review its .env.sample, the last four variables related to the 'your_cloudfront_etcetcetc' key refer to the cloudfront domain I previously told you to build:
 
 - VITE_DEFAULT_PROFILE_IMAGE_URL="your_cloudfront_default_profile_image_url/flowio/media/attachments/user/default/user_default.png"
 
