@@ -71,7 +71,7 @@ Log in to your AWS account and go to the [Amazon S3](https://s3.console.aws.amaz
 
 - Go to the bucket settings and select the Permissions tab.
 
-- Under Block public access, turn it off.
+- Under Block public access, turn it on.
 
 ### 4. Get the Bucket Name and Region
 
@@ -132,11 +132,14 @@ Log in to your AWS account and go to [Amazon CloudFront](https://console.aws.ama
 
 - In Origin Domain Name, select the S3 bucket you created earlier.
 
-- In Origin Access, select Origin access control settings (recommended).
+- In Origin Access, select Origin access control settings (recommended) and created a new OAC. After this, u need to updated policys in your bucket.
 
 - Leave the rest of the settings as default.
+  
+- Desactivate WAF protection.
 
 - Click Create Distribution.
+  
 
 ### 3. Get the CloudFront URL
 
